@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -25,4 +26,24 @@ $eleves =[0=>["Flamant","Brian","36 ans","Fontaine les Vervins","Passion"=>["Cry
           16=>["Meunier","Lubin","30 ans","Marcy sous marle","Passion"=>["Japon","manga","jeux-video"]],
           17=>["Caron","Gregory","40 ans","Fourmies","Passion"=>["la vie","informatique","jeux-video"]],
 ];
+?>
 
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<?php
+foreach ($eleves as $index =>$nom){?>
+<a href="info.php"><?php echo $nom[0] . " " . $nom[1] . "<br>"; ?></a>
+<?php
+}?>
+
+
+
+
+
+</body>
+</html>
